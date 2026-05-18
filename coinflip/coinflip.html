@@ -25,12 +25,12 @@
     <p> A very good coinflip in the browser !</p>
     <p>
         You landed:
-        <span id="coinflipresult"><b>(Coinflip first)</span>
+        <span id="coinflipresult"><b>(Coinflip first)</b></span>
     </p>
     <script>
         function coinflip() {
             const coinflipElement = document.getElementById("coinflipresult")
-            let coinflipResult = "heads" ? Math.round(Math.random()) == 0 : "tails"
+            let coinflipResult = Math.round(Math.random()) == 0 ? "heads" : "tails"
             coinflipElement.textContent = coinflipResult
         }
     </script>
