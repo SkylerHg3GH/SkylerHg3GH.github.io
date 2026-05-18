@@ -30,7 +30,7 @@
     <script>
         function coinflip() {
             const coinflipElement = document.getElementById("coinflipresult")
-            let coinflipResult = Math.round(Math.random()) == 0 ? "heads" : "tails"
+            let coinflipResult = (Math.round(Math.random()) == 0) ? "heads" : "tails"
             coinflipElement.textContent = coinflipResult
         }
     </script>
